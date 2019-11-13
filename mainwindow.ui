@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>762</width>
+    <height>275</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Impresión de FUAs</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/Icons/1329798428_PatientData.png</normaloff>:/Icons/1329798428_PatientData.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>762</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionFUA"/>
+   <addaction name="actionCONFIGURACION"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionFUA">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Icons/add-group.png</normaloff>:/Icons/add-group.png</iconset>
+   </property>
+   <property name="text">
+    <string>FUA</string>
+   </property>
+  </action>
+  <action name="actionCONFIGURACION">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Icons/1349716377_monotone_cog_settings_gear.png</normaloff>:/Icons/1349716377_monotone_cog_settings_gear.png</iconset>
+   </property>
+   <property name="text">
+    <string>CONFIGURACION</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
