@@ -839,7 +839,7 @@ void ui_atencion::on_pushButton_imprimir_clicked()
                     if(ui->lineEdit_cod_renaes->text().size() >0){
 
                     //painter.drawText(44,615,ui->lineEdit_cod_renaes->text());
-                    separa(painter,44,620,ui->lineEdit_cod_renaes->text(),12);
+                    separa(painter,45,620,ui->lineEdit_cod_renaes->text(),12);
                     }
                     //NOMBRE_IPRESS CONTRAREFERNCIA
                     if(ui->lineEdit_nom_ipress->text().size() >0){
