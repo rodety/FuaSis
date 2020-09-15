@@ -61,6 +61,96 @@
           <layout class="QGridLayout" name="gridLayout_3">
            <item row="0" column="0">
             <layout class="QGridLayout" name="gridLayout">
+             <item row="11" column="4">
+              <widget class="QDateEdit" name="dateEdit_fec_parto">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_4">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Personal que atiende</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="5">
+              <widget class="QLabel" name="label_21">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Institución</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="2">
+              <widget class="QLineEdit" name="lineEdit_nombres">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_5">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Lugar de Atención</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLineEdit" name="lineEdit_cod_renaes">
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_7">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Atención</string>
+               </property>
+              </widget>
+             </item>
+             <item row="13" column="6">
+              <widget class="QLineEdit" name="lineEdit_dni_cnv_afiliacion_rn">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
              <item row="9" column="0">
               <widget class="QLabel" name="label_23">
                <property name="font">
@@ -73,45 +163,24 @@
                </property>
               </widget>
              </item>
-             <item row="10" column="4">
-              <widget class="QLineEdit" name="lineEdit_otros_nombres">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="11" column="6">
-              <widget class="QLineEdit" name="lineEdit_num_historia_clinica">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
-              <widget class="QLabel" name="label_2">
+             <item row="9" column="3">
+              <widget class="QLabel" name="label_24">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
                <property name="text">
-                <string>Código de EESS</string>
+                <string>Apellido Materno</string>
                </property>
               </widget>
              </item>
-             <item row="4" column="0">
-              <widget class="QLabel" name="label_8">
+             <item row="6" column="3">
+              <widget class="QLineEdit" name="lineEdit_hoja_ref">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
-               </property>
-               <property name="text">
-                <string>Referencia Realizada por:</string>
                </property>
               </widget>
              </item>
@@ -127,55 +196,6 @@
                </property>
               </widget>
              </item>
-             <item row="12" column="0">
-              <widget class="QRadioButton" name="radioButton_masulino">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Masculino</string>
-               </property>
-               <attribute name="buttonGroup">
-                <string notr="true">buttonGroup_4</string>
-               </attribute>
-              </widget>
-             </item>
-             <item row="11" column="2">
-              <widget class="QRadioButton" name="radioButton">
-               <property name="text">
-                <string>No salud Materna</string>
-               </property>
-               <property name="checked">
-                <bool>true</bool>
-               </property>
-               <attribute name="buttonGroup">
-                <string notr="true">buttonGroup_5</string>
-               </attribute>
-              </widget>
-             </item>
-             <item row="3" column="0">
-              <widget class="QLabel" name="label_7">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Atención</string>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="2">
-              <widget class="QLineEdit" name="lineEdit_nom_ipress">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
              <item row="0" column="4">
               <widget class="QLineEdit" name="lineEdit_nom_eess">
                <property name="font">
@@ -185,8 +205,23 @@
                </property>
               </widget>
              </item>
-             <item row="9" column="2">
-              <widget class="QLineEdit" name="lineEdit_apellido_paterno">
+             <item row="12" column="3">
+              <widget class="QLabel" name="label_30">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Fecha de Nacimiento</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLineEdit" name="lineEdit_cod_eess">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
@@ -194,15 +229,84 @@
                </property>
               </widget>
              </item>
-             <item row="9" column="3">
-              <widget class="QLabel" name="label_24">
+             <item row="12" column="5">
+              <widget class="QLabel" name="label_33">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
                <property name="text">
-                <string>Apellido Materno</string>
+                <string>Etnia</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="4">
+              <widget class="QRadioButton" name="radioButton_oferta">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Oferta Flexible</string>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">buttonGroup</string>
+               </attribute>
+              </widget>
+             </item>
+             <item row="11" column="0">
+              <widget class="QLabel" name="label_27">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Sexo</string>
+               </property>
+              </widget>
+             </item>
+             <item row="14" column="5">
+              <widget class="QPushButton" name="pushButton_guardar_paciente">
+               <property name="text">
+                <string>Guardar Paciente</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource.qrc">
+                 <normaloff>:/Icons/Add-Male-User.png</normaloff>:/Icons/Add-Male-User.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="3">
+              <widget class="QLabel" name="label_11">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Nro de Hoja de Referencia</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="5">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>T. A</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="5">
+              <widget class="QLabel" name="label_22">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Cod Seguro</string>
                </property>
               </widget>
              </item>
@@ -221,39 +325,6 @@
                </attribute>
               </widget>
              </item>
-             <item row="10" column="5">
-              <widget class="QLabel" name="label_22">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Cod Seguro</string>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="2">
-              <widget class="QLabel" name="label_10">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Nombre de IPRESS U Oferta Flexible</string>
-               </property>
-              </widget>
-             </item>
-             <item row="12" column="6">
-              <widget class="QLineEdit" name="lineEdit_etnia">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
              <item row="2" column="2">
               <widget class="QRadioButton" name="radioButton_intramural">
                <property name="font">
@@ -269,50 +340,52 @@
                </attribute>
               </widget>
              </item>
-             <item row="10" column="2">
-              <widget class="QLineEdit" name="lineEdit_nombres">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="3">
-              <widget class="QLabel" name="label_26">
+             <item row="14" column="6">
+              <widget class="QPushButton" name="pushButton_imprimir">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
                <property name="text">
-                <string>Otros Nombres</string>
+                <string>Imprimir</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource.qrc">
+                 <normaloff>:/Icons/Printer_Picture.png</normaloff>:/Icons/Printer_Picture.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
                </property>
               </widget>
              </item>
-             <item row="9" column="6">
-              <widget class="QLineEdit" name="lineEdit_institucion">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="0">
-              <widget class="QLabel" name="label_9">
+             <item row="8" column="3">
+              <widget class="QPushButton" name="pushButton_buscar">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
                <property name="text">
-                <string>Codigo Renaes</string>
+                <string>Buscar</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource.qrc">
+                 <normaloff>:/Icons/search_64.png</normaloff>:/Icons/search_64.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
                </property>
               </widget>
              </item>
-             <item row="14" column="2">
-              <widget class="QDateEdit" name="dateEdit_fec_atencion">
+             <item row="12" column="6">
+              <widget class="QLineEdit" name="lineEdit_etnia">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
@@ -329,42 +402,65 @@
                </property>
               </widget>
              </item>
-             <item row="13" column="5">
-              <widget class="QLabel" name="label_34">
+             <item row="12" column="0">
+              <widget class="QRadioButton" name="radioButton_masulino">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
                <property name="text">
-                <string>DNI /CNV Afiliaion del RN</string>
+                <string>Masculino</string>
                </property>
+               <attribute name="buttonGroup">
+                <string notr="true">buttonGroup_4</string>
+               </attribute>
               </widget>
              </item>
-             <item row="3" column="5">
-              <widget class="QPushButton" name="pushButton_guardar_eess">
+             <item row="5" column="2">
+              <widget class="QLabel" name="label_10">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
                <property name="text">
-                <string>Guardar</string>
-               </property>
-               <property name="icon">
-                <iconset resource="../resource.qrc">
-                 <normaloff>:/Icons/1349716356_save.png</normaloff>:/Icons/1349716356_save.png</iconset>
+                <string>Nombre de IPRESS U Oferta Flexible</string>
                </property>
               </widget>
              </item>
-             <item row="6" column="0">
-              <widget class="QLineEdit" name="lineEdit_cod_renaes">
-               <property name="maximumSize">
-                <size>
-                 <width>50</width>
-                 <height>16777215</height>
-                </size>
+             <item row="14" column="4">
+              <widget class="QLineEdit" name="lineEdit_cod_prestacion">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
                </property>
+              </widget>
+             </item>
+             <item row="9" column="4">
+              <widget class="QLineEdit" name="lineEdit_apellido_materno">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="4">
+              <widget class="QLabel" name="label_18">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Diresa</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="4">
+              <widget class="QLineEdit" name="lineEdit_otros_nombres">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
@@ -387,32 +483,8 @@
                </attribute>
               </widget>
              </item>
-             <item row="14" column="3">
-              <widget class="QLabel" name="label_47">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Cod. Prestacion</string>
-               </property>
-              </widget>
-             </item>
-             <item row="11" column="0">
-              <widget class="QLabel" name="label_27">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Sexo</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="6">
-              <widget class="QLineEdit" name="lineEdit_numero">
+             <item row="8" column="2">
+              <widget class="QLineEdit" name="lineEdit_doc_identidad">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
@@ -420,42 +492,49 @@
                </property>
               </widget>
              </item>
-             <item row="14" column="0">
-              <widget class="QLabel" name="label_40">
+             <item row="15" column="3">
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_2">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
                <property name="text">
-                <string>Fecha de Atencion</string>
+                <string>Código de EESS</string>
                </property>
               </widget>
              </item>
-             <item row="13" column="2">
-              <widget class="QRadioButton" name="radioButton_puerpera">
+             <item row="10" column="6">
+              <widget class="QLineEdit" name="lineEdit_cod_seg">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
-               <property name="text">
-                <string>Puerpera</string>
-               </property>
-               <attribute name="buttonGroup">
-                <string notr="true">buttonGroup_5</string>
-               </attribute>
               </widget>
              </item>
-             <item row="12" column="5">
-              <widget class="QLabel" name="label_33">
+             <item row="0" column="3">
+              <widget class="QLabel" name="label_3">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
                <property name="text">
-                <string>Etnia</string>
+                <string>Nombre de EESS</string>
                </property>
               </widget>
              </item>
@@ -474,54 +553,19 @@
                </attribute>
               </widget>
              </item>
-             <item row="9" column="4">
-              <widget class="QLineEdit" name="lineEdit_apellido_materno">
+             <item row="8" column="0">
+              <widget class="QLineEdit" name="lineEdit_tdi">
+               <property name="maximumSize">
+                <size>
+                 <width>30</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
-              </widget>
-             </item>
-             <item row="3" column="2">
-              <widget class="QRadioButton" name="radioButton_ambulatoria">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Ambulatoria</string>
-               </property>
-               <attribute name="buttonGroup">
-                <string notr="true">buttonGroup_3</string>
-               </attribute>
-              </widget>
-             </item>
-             <item row="14" column="5">
-              <widget class="QPushButton" name="pushButton_guardar_paciente">
-               <property name="text">
-                <string>Guardar Paciente</string>
-               </property>
-               <property name="icon">
-                <iconset resource="../resource.qrc">
-                 <normaloff>:/Icons/Add-Male-User.png</normaloff>:/Icons/Add-Male-User.png</iconset>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="3">
-              <widget class="QRadioButton" name="radioButton_itinerante">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Itinerante</string>
-               </property>
-               <attribute name="buttonGroup">
-                <string notr="true">buttonGroup</string>
-               </attribute>
               </widget>
              </item>
              <item row="7" column="0">
@@ -536,41 +580,127 @@
                </property>
               </widget>
              </item>
-             <item row="9" column="5">
-              <widget class="QLabel" name="label_21">
+             <item row="12" column="4">
+              <widget class="QDateEdit" name="dateEdit_fec_nac">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="5">
+              <widget class="QLabel" name="label_32">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
                <property name="text">
-                <string>Institución</string>
+                <string>Numero de Historia Clinica</string>
                </property>
               </widget>
              </item>
-             <item row="8" column="5">
-              <widget class="QLineEdit" name="lineEdit_t_afil">
-               <property name="maximumSize">
-                <size>
-                 <width>30</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="4">
-              <widget class="QRadioButton" name="radioButton_oferta">
+             <item row="3" column="3">
+              <widget class="QRadioButton" name="radioButton_referencia">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
                <property name="text">
-                <string>Oferta Flexible</string>
+                <string>Referencia</string>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">buttonGroup_3</string>
+               </attribute>
+              </widget>
+             </item>
+             <item row="7" column="6">
+              <widget class="QLabel" name="label_19">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Numero</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QRadioButton" name="radioButton_ipress">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>De la IPRESS</string>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">buttonGroup</string>
                </attribute>
+              </widget>
+             </item>
+             <item row="14" column="3">
+              <widget class="QLabel" name="label_47">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Cod. Prestacion</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="2">
+              <widget class="QLabel" name="label_16">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Documento de Identidad</string>
+               </property>
+              </widget>
+             </item>
+             <item row="13" column="3">
+              <widget class="QLabel" name="label_31">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Fecha de Fallecimiento</string>
+               </property>
+              </widget>
+             </item>
+             <item row="14" column="0">
+              <widget class="QLabel" name="label_40">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Fecha de Atencion</string>
+               </property>
+              </widget>
+             </item>
+             <item row="13" column="5">
+              <widget class="QLabel" name="label_34">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>DNI /CNV Afiliaion del RN</string>
+               </property>
               </widget>
              </item>
              <item row="13" column="0">
@@ -600,287 +730,15 @@
                </property>
               </widget>
              </item>
-             <item row="13" column="3">
-              <widget class="QLabel" name="label_31">
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_9">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
                 </font>
                </property>
                <property name="text">
-                <string>Fecha de Fallecimiento</string>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="3">
-              <widget class="QLabel" name="label_11">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Nro de Hoja de Referencia</string>
-               </property>
-              </widget>
-             </item>
-             <item row="12" column="4">
-              <widget class="QDateEdit" name="dateEdit_fec_nac">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="2">
-              <widget class="QLineEdit" name="lineEdit_doc_identidad">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="3">
-              <widget class="QRadioButton" name="radioButton_referencia">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Referencia</string>
-               </property>
-               <attribute name="buttonGroup">
-                <string notr="true">buttonGroup_3</string>
-               </attribute>
-              </widget>
-             </item>
-             <item row="8" column="3">
-              <widget class="QPushButton" name="pushButton_buscar">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Buscar</string>
-               </property>
-               <property name="icon">
-                <iconset resource="../resource.qrc">
-                 <normaloff>:/Icons/search_64.png</normaloff>:/Icons/search_64.png</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>20</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="2">
-              <widget class="QRadioButton" name="radioButton_ipress">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>De la IPRESS</string>
-               </property>
-               <attribute name="buttonGroup">
-                <string notr="true">buttonGroup</string>
-               </attribute>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <widget class="QLabel" name="label_4">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Personal que atiende</string>
-               </property>
-              </widget>
-             </item>
-             <item row="12" column="3">
-              <widget class="QLabel" name="label_30">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Fecha de Nacimiento</string>
-               </property>
-              </widget>
-             </item>
-             <item row="13" column="6">
-              <widget class="QLineEdit" name="lineEdit_dni_cnv_afiliacion_rn">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="7" column="2">
-              <widget class="QLabel" name="label_16">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Documento de Identidad</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="3">
-              <widget class="QLabel" name="label_3">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Nombre de EESS</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="2">
-              <widget class="QLineEdit" name="lineEdit_cod_eess">
-               <property name="enabled">
-                <bool>true</bool>
-               </property>
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="3">
-              <widget class="QLineEdit" name="lineEdit_hoja_ref">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="14" column="4">
-              <widget class="QLineEdit" name="lineEdit_cod_prestacion">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="7" column="4">
-              <widget class="QLabel" name="label_18">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Diresa</string>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="6">
-              <widget class="QLineEdit" name="lineEdit_cod_seg">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QLabel" name="label_5">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Lugar de Atención</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="0">
-              <widget class="QLineEdit" name="lineEdit_tdi">
-               <property name="maximumSize">
-                <size>
-                 <width>30</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="11" column="5">
-              <widget class="QLabel" name="label_32">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Numero de Historia Clinica</string>
-               </property>
-              </widget>
-             </item>
-             <item row="11" column="4">
-              <widget class="QDateEdit" name="dateEdit_fec_parto">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-              </widget>
-             </item>
-             <item row="7" column="6">
-              <widget class="QLabel" name="label_19">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Numero</string>
-               </property>
-              </widget>
-             </item>
-             <item row="14" column="6">
-              <widget class="QPushButton" name="pushButton_imprimir">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Imprimir</string>
-               </property>
-               <property name="icon">
-                <iconset resource="../resource.qrc">
-                 <normaloff>:/Icons/Printer_Picture.png</normaloff>:/Icons/Printer_Picture.png</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
+                <string>Codigo Renaes</string>
                </property>
               </widget>
              </item>
@@ -893,174 +751,165 @@
                </property>
               </widget>
              </item>
-             <item row="7" column="5">
-              <widget class="QLabel" name="label_6">
+             <item row="1" column="3">
+              <widget class="QRadioButton" name="radioButton_itinerante">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
                <property name="text">
-                <string>T. A</string>
+                <string>Itinerante</string>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">buttonGroup</string>
+               </attribute>
+              </widget>
+             </item>
+             <item row="6" column="2">
+              <widget class="QLineEdit" name="lineEdit_nom_ipress">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
                </property>
               </widget>
              </item>
-             <item row="15" column="3">
-              <spacer name="verticalSpacer_2">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
+             <item row="3" column="2">
+              <widget class="QRadioButton" name="radioButton_ambulatoria">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
                </property>
-               <property name="sizeHint" stdset="0">
+               <property name="text">
+                <string>Ambulatoria</string>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">buttonGroup_3</string>
+               </attribute>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_8">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Referencia Realizada por:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="3">
+              <widget class="QLabel" name="label_26">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Otros Nombres</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="6">
+              <widget class="QLineEdit" name="lineEdit_institucion">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="14" column="2">
+              <widget class="QDateEdit" name="dateEdit_fec_atencion">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="6">
+              <widget class="QLineEdit" name="lineEdit_num_historia_clinica">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item row="13" column="2">
+              <widget class="QRadioButton" name="radioButton_puerpera">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Puerpera</string>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">buttonGroup_5</string>
+               </attribute>
+              </widget>
+             </item>
+             <item row="8" column="5">
+              <widget class="QLineEdit" name="lineEdit_t_afil">
+               <property name="maximumSize">
                 <size>
-                 <width>20</width>
-                 <height>40</height>
+                 <width>30</width>
+                 <height>16777215</height>
                 </size>
                </property>
-              </spacer>
+              </widget>
              </item>
-            </layout>
-           </item>
-           <item row="1" column="0">
-            <layout class="QGridLayout" name="gridLayout_14">
-             <item row="2" column="4">
-              <widget class="QLabel" name="label_103">
-               <property name="text">
-                <string>NRO RNE</string>
+             <item row="8" column="6">
+              <widget class="QLineEdit" name="lineEdit_numero">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
                </property>
               </widget>
              </item>
-             <item row="2" column="1">
-              <widget class="QComboBox" name="comboBox_cod_responsable_2">
-               <item>
-                <property name="text">
-                 <string>1 MEDICO</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2 FARMACEUTICO</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3 CIRUJANO DENTISTA</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4 BIOLOGO</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5 OBSTETRIZ</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6 ENFERMERIA</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7 TRABAJADORA SOCIAL</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>8 PSICOLOGA</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>9 TECNOLOGO MEDICO</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>10 NUTRICION</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11 TECNICO EN ENFERMERIA</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>12 AUXILIAR EN ENFERMERIA</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>13 OTRO</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="2" column="2">
-              <widget class="QLabel" name="label_102">
+             <item row="11" column="2">
+              <widget class="QRadioButton" name="radioButton">
                <property name="text">
-                <string>ESPECIALIDAD</string>
+                <string>No salud Materna</string>
                </property>
-              </widget>
-             </item>
-             <item row="2" column="6">
-              <widget class="QLabel" name="label_106">
-               <property name="text">
-                <string>EGRESADO</string>
+               <property name="checked">
+                <bool>true</bool>
                </property>
+               <attribute name="buttonGroup">
+                <string notr="true">buttonGroup_5</string>
+               </attribute>
               </widget>
              </item>
-             <item row="0" column="1" colspan="5">
-              <widget class="QLabel" name="label_105">
-               <property name="text">
-                <string>NOMBRE DEL RESPONSABLE DE LA ATENCION</string>
+             <item row="3" column="5">
+              <widget class="QPushButton" name="pushButton_guardar_eess">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
                </property>
-              </widget>
-             </item>
-             <item row="2" column="7">
-              <widget class="QLineEdit" name="lineEdit_egresado_2"/>
-             </item>
-             <item row="1" column="0">
-              <widget class="QLineEdit" name="lineEdit_dni_profe_2"/>
-             </item>
-             <item row="2" column="3">
-              <widget class="QLineEdit" name="lineEdit_especialidad_2"/>
-             </item>
-             <item row="1" column="6" colspan="2">
-              <widget class="QLineEdit" name="lineEdit_nro_colegiatura_2"/>
-             </item>
-             <item row="2" column="5">
-              <widget class="QLineEdit" name="lineEdit_nro_rne_2"/>
-             </item>
-             <item row="2" column="0">
-              <widget class="QLabel" name="label_104">
                <property name="text">
-                <string>COD RESPONSABLE DE LA ATENCION</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="6" colspan="2">
-              <widget class="QLabel" name="label_107">
-               <property name="text">
-                <string>NRO DE COLEGIATURA</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
-              <widget class="QLabel" name="label_108">
-               <property name="text">
-                <string>NRO DNI</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1" colspan="5">
-              <widget class="QLineEdit" name="lineEdit_nombre_profe_2"/>
-             </item>
-             <item row="3" column="6" colspan="2">
-              <widget class="QPushButton" name="pushButton_guardar_profesional_2">
-               <property name="text">
-                <string>Guardar Profesional</string>
+                <string>Guardar</string>
                </property>
                <property name="icon">
                 <iconset resource="../resource.qrc">
                  <normaloff>:/Icons/1349716356_save.png</normaloff>:/Icons/1349716356_save.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="2">
+              <widget class="QLineEdit" name="lineEdit_apellido_paterno">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
                </property>
               </widget>
              </item>
@@ -2323,10 +2172,10 @@
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_4"/>
   <buttongroup name="buttonGroup_5"/>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup_4"/>
   <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>

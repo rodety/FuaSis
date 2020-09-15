@@ -7,6 +7,7 @@ class dbmanager
 public:
     dbmanager();
     int createDB();
+    int updateDB();
 private:
 
 };

@@ -414,7 +414,7 @@ void ui_atencion::separaDate(QPainter &p, int x, int y, QString text, int factor
 void ui_atencion::separaDateYear(QPainter &p, int x, int y, QString text, int factor)
 {
     text.remove('/');
-    text = text.remove(4,4);    
+    //text = text.remove(4,4);
     for(int i=0;i<text.size();i++){
         p.drawText(x,y,text.at(i));
         x+=factor;
@@ -837,18 +837,15 @@ void ui_atencion::on_pushButton_imprimir_clicked()
 
                     //COD_RENAES CONTRAREFERNCIA
                     if(ui->lineEdit_cod_renaes->text().size() >0){
-
+                    salida= query.value(39).toString().split("-");
                     //painter.drawText(44,615,ui->lineEdit_cod_renaes->text());
-                    separa(painter,45,620,ui->lineEdit_cod_renaes->text(),12);
+                    separa(painter,int(salida.at(0).toInt()),int(salida.at(1).toInt()),ui->lineEdit_cod_renaes->text(),12);
                     }
                     //NOMBRE_IPRESS CONTRAREFERNCIA
                     if(ui->lineEdit_nom_ipress->text().size() >0){
-
+                    salida= query.value(40).toString().split("-");
                     //painter.drawText(298,615,ui->lineEdit_nom_ipress->text());
-                    separa(painter,298,620,ui->lineEdit_nom_ipress->text(),12);
-
-
-
+                    separa(painter,int(salida.at(0).toInt()),int(salida.at(1).toInt()),ui->lineEdit_nom_ipress->text(),12);
                     }
                 }
             }
@@ -1378,6 +1375,9 @@ void ui_atencion::createResponsable()
     ui->gridLayout_5->addWidget(completingTextDni_profe,0,1);
     ui->gridLayout_5->addWidget(completingTextNombre_profe,0,3);
     ui->gridLayout_5->addWidget(completingTextNro_colegiatura,0,5);
+
+    //NEW LAYOUT
+
 
 }
 

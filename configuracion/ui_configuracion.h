@@ -41,6 +41,8 @@ private slots:
 
     void on_pushButton_proc_cie_clicked();
 
+    void on_pushButton_update_db_clicked();
+
 signals:
     void showMessage(QString msg);
 

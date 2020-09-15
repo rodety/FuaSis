@@ -469,6 +469,7 @@ void ui_configuracion::loadMeasurements()
             QStringList salida;
             salida= query.value(1).toString().split("-");            
             for(int i=1;i<78;i++){
+               qDebug()<<i<<endl;
                salida= query.value(i).toString().split("-");               
                ui->tableWidget_medidas->setItem(i-1, 1, new QTableWidgetItem(salida.at(0)));
                ui->tableWidget_medidas->setItem(i-1, 2, new QTableWidgetItem(salida.at(1)));
@@ -479,7 +480,7 @@ void ui_configuracion::loadMeasurements()
 
 void ui_configuracion::formatTableWidget()
 {
-     ui->tableWidget_medidas->setRowCount(38);
+     ui->tableWidget_medidas->setRowCount(77);
      ui->tableWidget_medidas->setColumnCount(3);
 
      m_TableHeader<<"NOMBRE"<<"HORIZONTAL"<<"VERTICAL";
@@ -710,7 +711,7 @@ void ui_configuracion::on_pushButton_guardar_medidas_clicked()
         //VERIFICANDO SI EXISTE TEXTO EN CELDAS
         bool flag = true;
 
-        for(int i=0;i<76;i++){
+        for(int i=0;i<77;i++){
             if(ui->tableWidget_medidas->item(i,1)->text().size() <=0 || ui->tableWidget_medidas->item(i,2)->text().size() <= 0)
                 flag = false;
             else {
@@ -778,4 +779,17 @@ void ui_configuracion::on_pushButton_cie_clicked()
 void ui_configuracion::on_pushButton_proc_cie_clicked()
 {
     procesarCie();
+}
+
+void ui_configuracion::on_pushButton_update_db_clicked()
+{
+    dbconexion* s = dbconexion::getInstance();
+    dbmanager* d = new dbmanager();
+    int salida = d->updateDB();
+    if(salida == -10)
+        ui->label_messages->setText("Base de datos actualizada correctamente");
+    else{
+        ui->label_messages->setText("Codigo de error: " + QString::number(salida));
+    }
+
 }
